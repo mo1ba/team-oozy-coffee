@@ -1,0 +1,90 @@
+main{
+    width: 100%; 
+    background-color:#FAF7F2;
+    padding:300px 180px;
+    box-sizing: border-box;
+}
+.noticeTitle>h2{
+    font-size: 96px;
+    font-weight: bold;
+    color: #013220;
+    border-bottom: 4px solid #013220;
+    padding-bottom: 40px;
+    font-family: 'TheJamsil5Bold';
+}
+.notice{
+    display: flex;  
+    justify-content: space-between;
+    align-items: center;
+    padding:  30px 0;
+    border-bottom:2px solid #013220;
+
+}
+.notice>.noticeTxt{
+    font-size: 24px;
+    font-weight: bold;
+    color: #013220;
+   padding-bottom: 10px;
+   font-family: "Noto Sans KR", sans-serif;
+}
+.noticeIconImgs{
+    align-items: center;
+}
+
+.noticeArrowImg{
+    width: 20px; height: 20px;
+    padding-bottom: 20px;
+    
+}
+.noticeContent>p{
+    font-size: 18px;
+    font-weight: 500;
+    padding-top: 20px;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width:1024px) {
+    main{
+        padding: 300px  100px;
+    }
+    .noticeTitle>h2{
+        font-size: 48px;
+    }
+    .notice>.noticeTxt{
+        font-size: 18px;
+        overflow: hidden;
+        word-break: break-all; 
+        white-space:nowrap; 
+        text-overflow: ellipsis;
+    }
+    .noticeLogoIconimg{
+        width: 50px;
+    }
+    .noticeArrowImg{
+        padding-bottom: 5px;
+    }
+    .noticeContent>p{
+
+        font-size: 14px;
+        font-weight: 500;
+        
+    }
+    
+}
+
+@media screen  and (max-width:720px){
+   
+    .notice{
+        height: 60px;
+    }
+    .notice>.noticeTxt{
+        font-size: 16px;
+    }
+    .noticeContent>p{
+        max-width: 500px;
+        line-height: 1.7;
+        font-size: 14px;
+        font-weight: 500;
+        
+    }
+}

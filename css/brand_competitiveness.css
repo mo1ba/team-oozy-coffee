@@ -1,0 +1,345 @@
+/* 서브페이지 _브랜드 경쟁력 CSS  */
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* font style */
+.Text_black {
+    color: #000;
+}
+
+.Text_white {
+    color: #fff;
+}
+
+.title {
+    font-family: 'TheJamsil5Bold', sans-serif;
+    font-size: clamp(18px, 2.8vw, 40px);
+    font-weight: bold;
+}
+
+.subTitle {
+    font-size: clamp(14px, 2vw, 24px);
+}
+
+.text {
+    font-size: clamp(12px, 1.2vw, 16px);
+    margin-top: 40px;
+}
+
+
+/* 섹션1_High Quality Low price */
+
+.sec1_HighQualityLowPrice {
+    width: 100%;
+    height: 920px;
+    background-color: #1B5E4A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.sec1_art {
+    width: 83.333vw;
+    height: 140px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.been_img {
+    position: fixed;
+    top: 50%;
+    left: 49%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+
+/* 섹션2_Developing your one menu */
+
+.sec2_DevelopingYourOneMenu {
+    width: 100%;
+    height: 920px;
+    background-color: #FAF7F2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sec2_art {
+    width: 83.333vw;
+    height: 140px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.coffee_img {
+    position: relative;
+    z-index: 2;
+}
+.sec2_subTitle {
+    font-size: clamp(14px, 1.5vw, 24px);
+    min-width: 370px;
+}
+
+.sec2_text {
+    font-size: clamp(12px, 0.3vw, 16px);
+    margin-top: 40px;
+}
+
+
+/* 섹션3 _A long experience*/
+
+.sec3_aLongExperience {
+    width: 100%;
+    height: 920px;
+    background-color: #1B5E4A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sec3_title{
+    text-align: center;
+    margin-top: 20px;
+}
+.sec3_subTitle{
+    text-align: center;
+    margin-top: 20px;
+}
+.sec3_text{
+    text-align: center;
+}
+
+
+/* 섹션4 _Success rate poes up*/
+.sec4_SuccessRatePoesUp{
+    width: 100%; height: 920px;
+    background-color: #FAF7F2;
+    display: flex;
+    align-items: center;
+}
+.sec4_art{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.sec4_subTitle{
+    margin-top: 20px;
+}
+.sec4_textbox{
+    margin-left: 4vw;
+}
+
+.sec4_img>img{
+    width: clamp(100px,60vw,1143px) ;
+}
+
+
+/* 섹션5 _Unrivaled delivery competitiveness*/
+.sec5_UnrivaledDeliveryCompetitiveness{
+    width: 100%;
+    height: 920px;
+    background-color: #1B5E4A;
+    display: flex;
+    align-items: center;
+    padding-left: 10vw;
+}
+.sec5_art{
+    width: 60%;
+}
+.sec5_subTitle{
+    margin-top: 20px;
+}
+
+
+
+
+
+@media (max-width: 1542px){
+    .block_1542{
+       display: block;
+    } 
+}
+
+
+/* 반응형 _tablet */
+@media (max-width: 1024px) {
+
+/* 반응형 _tablet 섹션1 */
+    .sec1_art {
+        width: 500px;
+        display: block;
+    }
+
+    .been_img {
+        position: relative;
+        top: auto;
+        left: auto;
+        transform: none;
+        order: 0;
+        margin: 2vh 12vw;
+    }
+
+    .sec1_title {
+        order: 1;
+    }
+
+    .sec1_title {
+        margin-bottom: 40px;
+    }
+
+/* 반응형 _tablet 섹션2 */
+    .sec2_art{
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        margin-top: -200px;    
+    }
+    .sec2_title{
+        display: flex;
+        order: 0;
+        margin-bottom: 40px;
+        
+    }
+    .sec2_textBox{
+        display: block;
+        order: 1;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    .coffee_img{
+        display: flex;
+        order: 2;
+    }
+    
+    /* 반응형 _tablet 섹션3 */
+    .sec3_art{
+        width: clamp(100px,75vw,700px) ;
+    }
+    .sec3_img>img{
+        width: 100%;
+    }
+
+    /* 반응형 _tablet 섹션4 */
+    .sec4_img {
+        width: 50%;               /* 컨테이너 너비 */
+        overflow: hidden;         /* 넘치는 부분 잘라냄 */
+      }
+      
+      .sec4_img>img {
+        width: 200%;              /* 이미지 너비를 2배로 */
+        object-fit: cover;
+        object-position: right;  
+      }
+      
+      /* 반응형 _tablet 섹션5 */
+
+}
+
+
+
+
+/* 반응형 _mobile */
+@media (max-width: 720px) {
+
+    /* 반응형 _mobile font style */
+    .title {
+        text-align: center;
+    }
+
+    .subTitle {
+        text-align: center;
+    }
+
+    .text {
+        text-align: center;
+    }
+
+    /* 반응형 _mobile 섹션1 */
+    .sec1_HighQualityLowPrice {
+        display: flex;
+        flex-direction: column;/* 가로 정렬 풀고 세로 정렬로 변경 */
+    }
+
+    .sec1_art {
+        order: 0;
+    }
+    .been_img {
+        min-width: 100px;
+        order: 1;
+        margin-top: 80px;
+    }
+    .been_img>img{
+        width: clamp(10px,20vw,100px) ;
+    }
+
+    /* 반응형 _mobile 섹션2 */
+    
+    .coffee_img{
+        display: flex;
+        order: 2;
+    }
+    .coffee_img>img{
+        width: 30vw;
+    }
+    
+    /* 반응형 _mobile 섹션3 */
+    .sec3_art{
+        width: 100%;
+    }
+    .sec3_aLongExperience {
+        align-items: flex-start;
+    }
+    .sec3_title{
+        margin-top: 150px;
+    }
+    .sec3_subTitle{
+        margin-top: 30px;
+    }
+
+    /* 반응형 _mobile 섹션4 */
+    .sec4_art{
+        display: block;
+
+    }
+    .sec4_img {
+        width: 100%;           
+      }
+      
+      .sec4_img>img {
+        width: 100%;             
+        object-fit: cover;
+        object-position: right;  
+      }
+      .sec4_textbox{
+          margin-top: 130px;
+          margin-left: 0px;
+      }
+      .sec4_subTitle{
+          margin-top: 30px;
+      }
+
+      /* 반응형 _mobile 섹션5 */
+      .sec5_UnrivaledDeliveryCompetitiveness{
+        
+        padding-left: 0;
+    }
+      .sec5_art{
+          width: 100%;
+          margin: 0 auto;
+      }
+      
+}
+
+
+@media (max-width: 439px) {
+    .block_405{
+        display: block;
+     } 
+}

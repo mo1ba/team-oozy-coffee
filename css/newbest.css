@@ -1,0 +1,299 @@
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background-color: #faf7f2;
+}
+
+body {
+    background-color: #faf7f2;
+}
+
+.m_sct {
+    padding-top: 100px; 
+    width: 100%;
+    height: 50vh;
+    background-image: url('./../img/subvisual_img/subpage_newbestbanner.jpg');
+    background-size: cover;
+    background-position: center center;
+    margin: 0 auto 70px;
+    position: relative;
+    z-index: 1;
+    box-sizing: border-box;
+    white-space: nowrap;
+}
+
+.m_sct_text {
+    position: absolute;
+    bottom: 35px;
+    left: 30%;
+    transform: translate(-50%);
+    padding: 20px 60px;
+    font-size: 36px;
+    font-weight: bold;
+    color: #fff;
+    z-index: 2;
+    box-sizing: border-box;
+    font-family: 'TheJamsil5Bold', 'Noto Sans KR', sans-serif;
+}
+
+.coffee-section {
+    padding-left: 180px;
+    padding-right: 180px;
+    margin: 0 auto 70px;
+    box-sizing: border-box;
+    width: 100%;
+    z-index: 10; 
+}
+
+.coffee-section img {
+    width: 100%;
+}
+
+.coffee-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto 70px;
+    justify-content: center;
+}
+
+.oozy-flip-card {
+    width: 280px;
+    height: 360px;
+    perspective: 1000px;
+    margin: 0 auto 30px;
+    cursor: pointer;
+}
+
+.oozy-flip-inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.8s ease;
+}
+
+.oozy-flip-card.oozy-flipped .oozy-flip-inner {
+    transform: rotateY(180deg);
+}
+
+.oozy-flip-front,
+.oozy-flip-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.oozy-flip-front:hover {
+    border: 2px solid #013220;
+    transform: scale(1.05);
+}
+
+.oozy-flip-front {
+    background-color: #faf7f2;
+    z-index: 2;
+}
+
+.oozy-flip-front img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.oozy-title {
+    font-weight: bold;
+    margin: 10px 0;
+    font-size: 16px;
+    color: #333;
+}
+
+.oozy-flip-back {
+    background: linear-gradient(rgba(1, 50, 32, 0.9), rgba(1, 50, 32, 0.9));
+    color: white;
+    transform: rotateY(180deg);
+    font-size: 14px;
+    line-height: 1.6;
+    backface-visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.more-btn {
+    margin: 30px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: 1px solid #333;
+    background-color: white;
+    transition: all 0.3s;
+    border-radius: 5px;
+    font-family: 'Noto Sans KR', sans-serif;
+    display: block;
+}
+
+.more-btn:hover {
+    border: 1px solid #d80056;
+    background-color: #D80056;
+    color: white;
+}
+
+.section-title {
+    width: 1000px;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 300;
+    letter-spacing: 8px;
+    margin-bottom: 60px;
+    padding: 25px 50px;
+    border: 2px solid #333;
+    border-radius: 20px;
+    display: inline-block;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: 300px;
+    box-sizing: border-box;
+   font-family: 'TheJamsil5Bold', sans-serif;
+}
+
+/* 태블릿 (1024px 이하) */
+@media screen and (max-width: 1024px) {
+    .m_sct {
+        margin-bottom: 40px;
+        width: 100%;
+    }
+        .m_sct_text {
+        font-size: 28px;
+        padding: 18px 50px;
+    }
+
+    .coffee-section {
+        padding-left: 100px;
+        padding-right: 100px;
+        margin-bottom: 40px;
+        box-sizing: border-box;
+        width: 100%;
+    }
+    
+
+    .coffee-grid {
+        gap: 20px;
+        grid-template-columns: repeat(2, 1fr);
+        margin-bottom: 40px;
+        width: 100%;
+    }
+
+    .oozy-flip-card {
+        margin-bottom: 20px;
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .section-title {
+        width: 80%;
+        max-width: 800px;
+        font-size: 28px;
+        padding: 20px 40px;
+        letter-spacing: 4px;
+        box-sizing: border-box;
+    }
+}
+
+/* 모바일 (720px 이하) */
+@media screen and (max-width: 720px) {
+    .m_sct_text {
+        font-size: 32px;
+        padding: 15px 30px;
+
+    }
+
+    .coffee-section {
+        padding-left: 90px;
+        padding-right: 90px;
+        box-sizing: border-box;
+        margin-bottom: 40px;
+    }
+
+    .coffee-grid {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+        max-width: 300px;
+    }
+
+    .oozy-flip-card {
+        width: 100%;
+        max-width: 260px;
+        height: 320px;
+    }
+
+    .section-title {
+        width: 90%;
+        font-size: 24px;
+        padding: 15px 30px;
+        letter-spacing: 2px;
+        margin-bottom: 40px;
+        box-sizing: border-box;
+    }
+
+    .top_btn {
+        bottom: 30px;
+        right: 30px;
+        width: 45px;
+        height: 45px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .coffee-section {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .m_sct_text {
+        padding: 10px 30px;
+    }
+
+    .section-title {
+        font-size: 20px;
+        padding: 12px 25px;
+        width: 95%;
+    }
+
+    .oozy-flip-card {
+        height: 300px;
+    }
+
+    .oozy-title {
+        font-size: 14px;
+    }
+
+    .oozy-flip-back {
+        font-size: 13px;
+        padding: 15px;
+    }
+}

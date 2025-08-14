@@ -1,0 +1,258 @@
+/* 서브페이지 _고객센터 CSS */
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+}
+/* 섹션1 */
+.sec1_serviceCenter {
+    width: 100%;
+    background-color: #1B5E4A;
+    padding: 250px 0;
+}
+
+.sec1_art {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.OOZYCOFFEE_LOGO_white {
+    width: 159px;
+    margin: 0 auto;
+}
+
+.Operating_hours {
+    font-family: 'TheJamsil5Bold', sans-serif;
+    font-size: 40px;
+    color: #fff;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.Operating_hours_text {
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.Operating_hours_text_Responsive {
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+    margin-top: 30px;
+    display: none;
+}
+
+
+
+
+/* 섹션2 */
+.sec2_serviceCenter {
+    width: 100%;
+    background-color: #FAF7F2;
+    padding: 200px 0;
+}
+
+.btnParent {
+    width: 880px;
+    margin: 0 auto 0;
+    display: flex;
+    gap: 10px;
+}
+
+.service_center_btn {
+    width: 170px;
+    height: 144px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    text-align: center;
+    color: #000;
+}
+.service_center_btn{
+    font-size: 20px;
+}
+.service_center_btn:hover{
+    background-color: #D80056;
+    color: #fff;
+}
+
+
+/* 팝업창 CSS */
+.popup_background{
+    display: none;
+    position: fixed;
+    left: 0; top: 0;
+    width: 100%; height: 100vh;
+    background-color: rgb(0, 0, 0,0.5);
+    z-index: 99999;
+    
+}
+.popup{
+    width: 800px; height: 80%;
+    background-color: #809990;
+    margin: 100px auto;
+    border-radius: 1%;
+    border: 2px solid #000;
+}
+.popup_title{
+    margin: 0 auto;
+}
+.category{
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+}
+.popupCategoryText{
+    color: #013220;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'TheJamsil5Bold', sans-serif;
+}
+
+.popup_under{
+    padding: 20px 40px;
+}
+
+.popup_write{
+    color: #fff;
+    font-size: 20px;
+    margin:20px 0 6px
+}
+
+
+.popup_title_input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    box-sizing: border-box;
+    background-color: #809990;
+    border: 1px solid #fff;
+
+}
+
+.popup_detail_input {
+    width: 100%;
+    height: 320px;
+    padding: 10px;
+    font-size: 16px;
+    box-sizing: border-box;
+    resize: vertical;
+    background-color: #809990;
+    border: 1px solid #fff;
+}
+
+.writeBtn{
+    width: 200px; height: 50px;
+    background-color: #fff;
+    margin: 30px auto;
+    display: flex;              
+  align-items: center;        
+  justify-content: center;    
+  text-align: center;   
+  border: 1px solid #000;      
+}
+.writeBtn:hover{
+    background-color: #D80056;
+    color: #fff;
+}
+.close_parent{
+    display: flex;
+    padding: 20px 20px 0;
+}
+.close_frontHideBox{
+    width: 100%; height: 20PX;
+    
+}
+.Close{
+    width: 30px;
+}
+.Close>img{
+    width: 100%
+}
+
+
+
+/* 반응형 _tablet */
+@media (max-width: 1024px) {
+
+    /* 반응형 _tablet 섹션1 */
+    .sec1_art {
+        width: 52vw;
+    }
+    .Operating_hours_text {
+        display: none;
+    }
+
+    .Operating_hours_text_Responsive {
+        display: block;
+    }
+
+    /* 반응형 _tablet 섹션2 */
+    .btnParent{
+        width: 530px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    /* 반응형 _tablet 팝업 */
+    .popup{
+        width: 70%; height: 80%;
+        background-color: #809990;
+        margin: 100px auto;
+        
+    }
+    .popup_under{
+        padding: 2vw 5vw;
+    }
+    
+}
+
+
+
+/* 반응형 _mobile */
+@media (max-width: 720px) {
+
+    /* 반응형 _mobile 섹션2 */
+    .btnParent{
+        width: 90%;
+        display: block;
+        margin: 0 auto 0;
+    }
+    .service_center_btn{
+        width: 100%; height: 70px;
+        margin: 0 auto 15px;
+    }
+
+    /* 반응형 _mobile 팝업 */
+    .popup{
+        width: 70%; height: 80%;
+        background-color: #809990;
+        margin: 100px auto;
+        
+    }
+    .writeBtn{
+        width: 20vw; height: 50px;
+        background-color: #fff;
+        margin: 30px auto;
+        display: flex;              
+      align-items: center;        
+      justify-content: center;    
+      text-align: center;         
+    }
+}
+
+
+@media (max-width: 600px) {
+    .block_600{
+        display: block;
+    }
+}
+
+@media (max-width: 500px) {
+    .block_500{
+        display: block;
+    }
+}

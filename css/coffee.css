@@ -1,0 +1,335 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background-color: #faf7f2;
+}
+
+body {
+    background-color: #faf7f2;
+}
+
+.m_sct {
+   padding-top: 100px; 
+    width: 100%;
+    height: 50vh;
+    background-image: url('./../img/subvisual_img/subpage_coffeebanner.jpg');
+    background-size: cover;
+    background-position: center center;
+    margin: 0 auto 70px;
+    position: relative;
+    z-index: 1;
+    box-sizing: border-box; 
+    white-space: nowrap;
+}
+
+.m_sct_text {
+    position: absolute;
+    bottom: 35px;
+    left: 30%;
+    transform: translate(-50%);
+    padding: 20px 60px;
+    font-size: 36px;
+    font-weight: bold;
+    color: #fff;
+    z-index: 2;
+    box-sizing: border-box;
+    font-family: 'TheJamsil5Bold', 'Noto Sans KR', sans-serif;
+}
+
+/* Filter Box */
+.filter-box {
+    max-width: 1000px;
+    margin: 0 auto 70px;
+    box-sizing: border-box;
+    z-index: 10;
+}
+
+.filter-title {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.filter-bar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+.filter-btn {
+    /* 레이아웃 */
+    padding: 12px 24px;
+    border-radius: 25px;
+    
+    /* 배경 & 테두리 */
+    background: white;
+    border: 2px solid #013220;
+    
+    /* 텍스트 */
+    color: #013220;
+    font-family: 'TheJamsil5Bold', sans-serif; 
+    font-size: 14px;
+    font-weight: 600;
+    
+    /* 기타 */
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+}
+
+.filter-btn:hover {
+    background: #013220;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(1, 50, 32, 0.3);
+}
+
+.filter-btn.active {
+    background: #013220;
+    color: white;
+    box-shadow: 0 4px 12px rgba(1, 50, 32, 0.3);
+}
+
+.coffee-section {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto 70px;
+    box-sizing: border-box;
+}
+
+.coffee-section img {
+    width: 100%;
+}
+
+.coffee-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto 70px;
+    justify-content: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.oozy-flip-card {
+    width: 280px;
+    height: 360px;
+    perspective: 1000px;
+    margin: 0 auto 30px;
+    cursor: pointer;
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+.oozy-flip-inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.8s ease;
+    box-sizing: border-box;
+}
+
+.oozy-flip-card.oozy-flipped .oozy-flip-inner {
+    transform: rotateY(180deg);
+}
+
+.oozy-flip-front,
+.oozy-flip-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.oozy-flip-card:hover .oozy-flip-front {
+    border: 2px solid #013220;
+    transform: scale(1.05);
+}
+
+.oozy-flip-front {
+    background-color: #faf7f2;
+    z-index: 2;
+}
+
+.oozy-flip-front img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.oozy-title {
+    font-weight: bold;
+    margin: 10px 0;
+    font-size: 16px;
+    color: #333;
+}
+
+.oozy-flip-back {
+    /* 포지셔닝 */
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+    
+    /* 레이아웃 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    
+    /* 배경 */
+    background: linear-gradient(rgba(1, 50, 32, 0.9), rgba(1, 50, 32, 0.9));
+    
+    /* 텍스트 */
+    color: white;
+    font-size: 14px;
+    line-height: 1.6;
+    text-align: center;
+    
+    /* 기타 */
+    box-sizing: border-box;
+}
+
+#loadMoreBtn {
+    display: none;
+    margin: 30px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 1px solid #333;
+    background-color: white;
+    transition: all 0.3s;
+    box-sizing: border-box;
+    width: fit-content;        /* 추가 권장 */
+    text-align: center;        /* 추가 권장 */
+}
+
+#loadMoreBtn:hover {
+    border: 1px solid #d80056;
+    background-color: #D80056;
+    color: white;
+}
+
+/* ----------- 반응형 ----------- */
+
+/* 태블릿 (1024px 이하) */
+@media screen and (max-width: 1024px) {
+    .m_sct {
+        margin-bottom: 40px;
+        width: 100%;
+    }
+    
+    .m_sct_text {
+        font-size: 28px;
+        padding: 18px 50px;
+    }
+    
+    .filter-bar {
+        gap: 12px;
+    }
+    
+    .filter-btn {
+        padding: 10px 20px;
+        font-size: 13px;
+    }
+    
+    .coffee-section {
+        padding-left: 100px;
+        padding-right: 100px;
+        margin-bottom: 40px;
+        width: 100%;
+    }
+    
+    .coffee-grid {
+        gap: 20px;
+        grid-template-columns: repeat(2, 1fr);
+        margin-bottom: 40px;
+        width: 100%;
+    }
+    
+    .oozy-flip-card {
+        margin-bottom: 20px;
+        width: 100%;
+        max-width: 350px;
+    }
+    
+    #loadMoreBtn {
+        display: block;
+    }
+}
+
+/* 모바일 (720px 이하) */
+@media screen and (max-width: 720px) {
+    .m_sct_text {
+        font-size: 32px;
+        padding: 15px 30px;
+    }
+    
+    .filter-bar {
+        gap: 10px;
+        padding: 0 20px;
+    }
+
+    .filter-btn {
+        padding: 10px 16px;
+        font-size: 12px;
+        border-radius: 20px;
+    }
+    
+    .coffee-section {
+        padding-left: 90px;
+        padding-right: 90px;
+        width: 100%;
+    }
+    
+    .coffee-grid {
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+        max-width: 300px;
+    }
+    
+    .oozy-flip-card {
+        width: 100%;
+        max-width: 260px;
+        height: 320px;
+    }
+}
+
+/* 480px 이하 추가 최적화 */
+@media screen and (max-width: 480px) {
+    .m_sct_text {
+        padding: 10px 30px;
+    }
+    
+    .filter-btn {
+        padding: 8px 14px;
+        font-size: 11px;
+    }
+    
+    .coffee-section {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}

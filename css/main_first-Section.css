@@ -1,0 +1,247 @@
+/* ===== 공통 wrapper ===== */
+.home { 
+  padding-top: 100px;
+  background: #FAF7F2; color: #111; 
+}
+
+/* ===== 메인 배너 ===== */
+.home .hero { 
+  position: relative; z-index: 0; 
+}
+.home .hero .mySwiper { 
+  height: 500px; 
+}
+.home .hero .swiper { 
+  width: 100%;
+  max-width: none;
+  position: relative; 
+}
+.home .hero .swiper-wrapper { 
+  height: 100%; 
+}
+.home .hero .swiper-slide { 
+  display:flex; 
+  align-items:center; 
+  justify-content:center; 
+  background: transparent; 
+}
+.home .hero .swiper-slide img {
+  width: 100%;
+  max-width: 1920px;
+  height: 100%;
+  object-fit: fill;
+  display: block;
+}
+.home .hero .swiper-pagination {
+  position: absolute; 
+  bottom: 20px; left: 0; right: 0; 
+  text-align: center; 
+  z-index: 10;
+}
+.home .hero .swiper-pagination-bullet { 
+  width:10px; height:10px; 
+  background:#fff; 
+  opacity:.5; 
+}
+.home .hero .swiper-pagination-bullet-active { 
+  background:#D80056; 
+  opacity:1; 
+}
+
+/* ===== 섹션 타이틀/카테고리 ===== */
+.home .menu-header { 
+  padding: 30px 0; 
+  margin-top: 56px; 
+}
+.home .menu-header-inner {
+  display:flex; 
+  justify-content:space-between; 
+  align-items:center;
+  padding: 0 100px; 
+  max-width: 1200px; 
+  width: 100%; 
+  margin: 0 auto;
+}
+.home .menu-title { 
+  font-size: 28px; font-weight: 700; 
+  color:#111; 
+  white-space: nowrap; 
+}
+.home .menu-category { 
+  display:flex; 
+  gap:24px; 
+  list-style:none; 
+  margin:0; padding:0; 
+}
+.home .menu-category li { 
+  cursor:pointer; 
+  color:#888; 
+  font-size:16px; 
+}
+.home .menu-category li.active { 
+  color:#1B5E4A; 
+  font-weight:700; 
+}
+
+/* ===== 메뉴 슬라이더 ===== */
+.home .menu-section{ 
+  padding: 10px 0 60px;
+}
+.home .menuSwiper { 
+  width: 70%; 
+  margin: 0 auto; 
+  position: relative; 
+  overflow: hidden; 
+}
+.home .menuSwiper .swiper-wrapper { 
+  padding:0; 
+  margin:0; 
+}
+.home .menuSwiper .swiper-slide {
+  display:flex; 
+  justify-content:center; 
+  background:transparent;
+}
+.home .menuSwiper .menu-card { 
+  width: 100%;
+  max-width: 260px;
+  margin: 0 auto;
+  text-align:center; 
+  box-sizing:border-box; 
+}
+.home .menuSwiper .menu-card img {
+  width:100%; 
+  height: auto;
+  object-fit:cover;
+  aspect-ratio: 260 / 182; 
+  margin-bottom:16px; 
+  display:block;
+  box-shadow: 0px -5px 5px -4px #66666680 inset;
+}
+.home .menuSwiper .menu-card h3 { 
+  font-size:16px; 
+  font-weight:700; 
+  margin-bottom:8px; 
+  color:#111; 
+}
+.home .menuSwiper .menu-card p { 
+  font-size:14px; 
+  color:#666; 
+  line-height:1.5; 
+}
+
+/* 네비게이션 화살표 */
+.home .menuSwiper .swiper-button-prev,
+.home .menuSwiper .swiper-button-next {
+  top: 50%; width: 30px; height: 30px; 
+  color:#013220; 
+  transform: translateY(-50%);
+}
+.home .menuSwiper .swiper-button-prev { 
+  left: 8px; 
+}
+.home .menuSwiper .swiper-button-next { 
+  right: 8px; 
+}
+
+
+
+/* ===== 반응형 ===== */
+@media (max-width: 1200px) {
+  .home .menu-header-inner { 
+    padding: 0 60px; 
+}
+  .home .menuSwiper { 
+    width: 80%; 
+}
+}
+
+
+@media (max-width: 1024px) {
+  .home .menu-header { 
+    margin-top: 48px; 
+    padding: 24px 0 8px; 
+  }
+  .home .menu-header-inner { 
+    max-width: none;
+    width: 88%;         
+    padding: 0;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+.home .menu-title{
+  font-size: 24px; 
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 20px;
+}
+  .home .menu-category {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    margin: 0; padding: 0;
+    list-style: none;
+    flex-wrap: wrap;                    
+}
+  .home .menuSwiper { 
+    width: 88%; 
+}
+  .home .menuSwiper .swiper-button-prev { 
+    left: 3px; 
+}
+  .home .menuSwiper .swiper-button-next { 
+    right: 3px; 
+}
+  .home .hero .mySwiper{ 
+    height:420px; 
+}
+}
+
+@media (max-width: 720px) {
+  .home .menu-header { 
+    margin-top: 40px; 
+    padding: 16px 0 8px; 
+}
+  .home .menu-header-inner { 
+    width: 92%;
+    padding: 0;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+  .home .menu-title { 
+    font-size: 20px;
+    text-align: center;
+}
+  .home .menu-category { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    margin: 0; padding: 0;
+    list-style: none;
+    flex-wrap: wrap; 
+}
+  .home .menuSwiper { 
+    width: 92%; 
+}
+  .home .menuSwiper .menu-card{ 
+    width: 240px; 
+}
+  .home .menuSwiper .menu-card img { 
+    width: 240px; height: 168px; 
+}
+.home .menuSwiper .swiper-button-prev,
+  .home .menuSwiper .swiper-button-next{
+    display: none;
+  }
+.home .hero .mySwiper{ 
+  height:360px; 
+} }

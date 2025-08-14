@@ -1,0 +1,303 @@
+main{
+    width: 100%;
+    background-color: #1B5E4A;
+    
+    
+}
+.aboutOozy{
+    margin-top: 100px;
+    padding: 145px 180px;
+    box-sizing: border-box;
+    position: relative;
+}
+.aboutOozyTxt{
+    display: flex;
+    gap: 70px;
+    
+    height: 100%;
+   
+}
+.aboutOozyTxt>div{
+    flex: 1;    
+    height: 100%;
+}
+.aboutOozy .aboutOozyTxt{
+   
+    margin: 0 auto;
+    line-height: 1.7;
+    text-align: center;
+}
+.aboutOozy .aboutOozyTxt div:first-child{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.aboutOozy .aboutOozyTxt h2{
+    font-size: 128px;
+    color: #fff;
+    font-family:'TheJamsil5Bold' ;
+}
+.aboutOozy .aboutOozyTxt p{
+    font-size: 18px;
+    color: #fff;
+    padding-top: 20px;
+    font-family: "Noto Sans KR", sans-serif;
+    
+}
+
+
+.aboutOozyImg{
+    padding-top: 38% ;
+    background-image: url(./../img/franchiseInquiry/franchiseInquirySecondIImg.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.aboutOozyImg>img{
+    width: 100%;
+}
+.franchiseInquiryBtn{
+    width: 150px;
+    margin-top: 90px;
+}
+.franchiseInquiryBtn img{
+    width: 100%;
+}
+
+.affiliationProcedures{
+    width:100% ;
+    background-color: #FAF7F2;
+    padding: 145px 180px;
+    box-sizing: border-box;
+}
+.affiliationProceduresTop{
+    padding: 0 140px;
+    display: flex;
+    gap: 40px;
+}
+.affiliationProceduresTop>div{
+    margin: 0 auto;
+}
+.inquiryProceduresImg{
+    transition: transform 0.9s;
+    transform-style: preserve-3d;
+}
+
+.flip-box-inner {
+    transform: rotateY(180deg);
+  }
+.affiliationProceduresTop>div img{
+    
+    border: 7px solid #013220;
+    border-radius: 100%;
+    
+}
+
+.affiliationProceduresTop img{
+    width: 100%;
+}
+.affiliationProceduresTopTxt{
+    margin-top: 45px;
+    text-align: center;
+}
+.affiliationProceduresTopTxt>h2{
+    font-size: 24px;
+    font-weight: bold;
+    color: #013220;
+    font-family: "Noto Sans KR", sans-serif;
+}
+.affiliationProceduresTopTxt>p{
+    font-size: 18px;
+    padding-top: 15px;
+    font-family: "Noto Sans KR", sans-serif;
+}
+.affiliationProceduresBottom{
+    margin-top: 100px;
+    display: flex;
+    gap: 40px;
+}
+.affiliationProceduresBottom>.inquiryProcedures{
+    margin: 0 auto;
+}
+.affiliationProceduresBottom>.inquiryProcedures img{
+    animation: floating60 forwards infinite ease-in-out;
+    border: 7px solid #013220;
+    border-radius: 100%;
+}
+.affiliationProceduresBottom img{
+    width: 100%;
+}
+body .swiper{
+    display: none;
+}
+.franchiseInquiryTextBtn{
+    display: none;
+}
+
+
+  
+@media screen and (max-width:1024px) {
+    main{
+        width: 100%;
+        background-color: #1B5E4A;
+        padding-bottom: 50px;
+    
+        
+    }
+    .aboutOozy{
+        background-color: #FAF7F2;
+        padding: 70px 100px ;
+    }
+     .aboutOozy .aboutOozyTxt h2{
+        color: #D80056;
+        font-size: 12vw;
+        font-family:'TheJamsil5Bold';
+        
+     }
+     .aboutOozy .aboutOozyTxt p{
+        color: #000;
+        font-weight: 500;
+        font-size: 16px;
+     }
+     .aboutOozyTxt{
+    flex-direction: column;
+    gap: 70px;
+    
+    height: 100%;
+   
+}
+      .aboutOozyImg{
+        background-image: url(./../img/franchiseInquiry/franchiseInquiryImg.jpg);
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+      }
+     .aboutOozyImg>img{
+        display: none;
+     }
+     .franchiseInquiryBtn{
+       display: none;
+        
+    }
+     .affiliationProcedures{
+         display: none;
+     }
+     body .swiper{
+    display: block;
+    padding-bottom: 100px;
+  
+}
+     .affiliationProceduresSwiper{
+    width: 100%; 
+    background-color: #1B5E4A;
+    padding: 70px 100px;
+    box-sizing: border-box;
+    display: none;
+}
+ .affiliationProceduresSwiperWrapper{
+       display: flex;
+     }
+
+ .affiliationProceduresSwiperSilde{
+    display: flex;
+    flex: 1;
+    gap: 20px;
+ }
+ .affiliationProceduresBox{
+    background-color: #FAF7F2;
+ }
+
+ .inquirySwiper{
+     width: 100%;
+     margin: 0 100px;
+     box-sizing: border-box;
+    
+    
+     
+ } 
+ .inquiryWrapper{   
+    
+     width: 300%;
+     display: flex; 
+     padding-top: 50px;
+     
+ }
+ .inquirySwiper img{
+     width: 100%;
+ }
+ .inquirySlide{
+     display: flex;
+     gap: 20px;
+ }
+ .inquirySlide>.inquirySlideBox{
+     background-color: #FAF7F2;
+     padding: 20px;
+     box-sizing:border-box ;
+ }
+ .inquirySlide .inquiryText{
+    text-align: center;
+ }
+ .inquiryText>h2{
+    font-weight: bold;
+    color: #013220; 
+    font-size: 18px;
+ }
+
+ .swiper-pagination .swiper-pagination-bullet {
+     background-color: #D80056;
+     
+ }
+.franchiseInquiryTextBtn{
+    display: block;
+    width: 30vw;
+    border: 3px double #FAF7F2;
+    border-width:5px;
+    border-radius: 50px;
+    margin: 10px 50px  0 50px; 
+    margin: 50px auto;
+    
+    
+}
+.franchiseInquiryTextBtn>h2{
+    text-align: center;
+    color: #FAF7F2;
+    font-size: 30px;
+    padding:10px ;
+    font-family:'TheJamsil5Bold' ;
+}
+}   
+@media screen and (max-width:720px) {
+    .aboutOozy{
+        background-color: #FAF7F2;
+        padding: 70px 90px;
+        left: 0 ;top: 0;  
+        gap: 20px; 
+       
+    }
+    
+    .aboutOozy>.aboutOozyTxt h2{
+        color: #D80056;
+        font-size: 8vw;
+        font-weight: 500;
+        font-family:'TheJamsil5Bold';
+
+        
+     }
+     .aboutOozy>.aboutOozyTxt>p{
+        color: #013220;
+        font-weight: 500;
+        font-size: 16px;
+     }
+     .aboutOozyImg{
+        padding-top: 47%;
+        background-image: url(./../img/franchiseInquiry/franchiseInquirySecondIImg.png);
+        background-position: center center;
+        background-size: cover;
+     }
+     .franchiseInquiryBtn{
+        width: 150px;
+        
+    }
+
+}

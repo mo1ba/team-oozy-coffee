@@ -1,0 +1,178 @@
+/* main_FRANCHISE CSS */
+.sec_Franchise {
+    width: 100%;
+    background-color: #1B5E4A;
+    padding: 200px 0 180px;
+}
+
+.art_Franchise {
+    width: 900px;
+    height: 450px;
+    margin: 0 auto;
+}
+
+.Franchise_title {
+    width: 100%;
+    min-height: 150px;
+    display: flex;
+    margin: 0 auto;
+    align-items: flex-end;
+    /* 세로 가운데 정렬 */
+    justify-content: center;
+    /* 가로 가운데 정렬 */
+    gap: 10px;
+    margin: 0 auto;
+}
+
+.Franchise_title_text {
+    font-size: 124px;
+    color: #fff;
+    font-family: 'TheJamsil5Bold', sans-serif;
+}
+
+.Franchise_title_dot {
+    width: 24px;
+    height: 24px;
+    background-color: #D80056;
+    margin-bottom: 45px;
+}
+
+.Franchise_text1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.Franchise_text2 {
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+
+}
+
+.Franchise_btn_parent {
+    width: 600px;
+    display: flex;
+    justify-content: space-between;
+    margin: 70px auto 0;
+}
+
+.Franchise_btn {
+    width: 255px;
+    height: 75px;
+    background-color: #fff;
+    display: flex;
+    /* flex 컨테이너로 만들기 */
+    justify-content: center;
+    /* 가로 가운데 */
+    align-items: center;
+    border: 1px solid #000;
+}
+
+.Franchise_btn:hover {
+    background-color: #D80056;
+}
+.Franchise_btn:hover h4{
+    color: #fff;
+}
+.Franchise_btn>h4 {
+    text-align: center;
+    font-size: 20px;
+    color: #000;
+}
+
+
+
+
+
+
+/* 반응형-태블릿 */
+@media (max-width: 1024px) {
+    .sec_Franchise {
+        padding: 200px 0 140px;
+    }
+
+    .art_Franchise {
+        width: 700px;
+    }
+
+    .Franchise_title_text {
+        font-size: 90px;
+    }
+
+    .Franchise_title_dot {
+        width: 13px;
+        height: 13px;
+        margin-bottom: 34px;
+    }
+
+    .Franchise_text1 {
+        font-size: 20px;
+    }
+
+    .Franchise_text2 {
+        font-size: 16px;
+    }
+
+    .Franchise_btn_parent {
+        width: 500px;
+    }
+
+    .Franchise_btn {
+        width: 200px;
+        height: 60px;
+    }
+
+    .Franchise_btn>h4 {
+        font-size: 15px;
+    }
+}
+
+
+/* 반응형-모바일 */
+@media (max-width: 720px) {
+    .sec_Franchise {
+        padding: 200px 0 200px;
+    }
+
+    .art_Franchise {
+        width: 80vw;
+    }
+
+    .Franchise_title_text {
+        font-size: clamp(30px, 8vw, 65px);
+    }
+
+    .Franchise_title_dot {
+        width: clamp(6px, 1vw, 24px);
+        height: clamp(6px, 1vw, 24px);
+        margin-bottom: 20px;
+        transform: translateY(calc((720px - 100vw) * 0.02));
+    }
+
+    .Franchise_text1 {
+        font-size: clamp(16px, 3vw, 24px);
+    }
+
+    .Franchise_text2 {
+        font-size: clamp(12px, 2vw, 16px);
+    }
+
+    .Franchise_btn_parent {
+        width: 500px;
+        display: block;
+    }
+
+    .Franchise_btn {
+        width: 72vw;
+        height: 60px;
+    }
+
+    .Franchise_rightBtn {
+        margin-top: 25px;
+    }
+
+}

@@ -1,0 +1,86 @@
+.mainNotice{
+    width: 100%;
+    background-color: #FAF7F2;
+    justify-content:space-around;
+    align-items: center;
+    display: flex;
+    box-sizing: border-box;
+    padding: 50px 0;
+}   
+.noticeTxtAndImg{
+    width: 30vw;
+
+}
+.noticeTxtAndImg h2{
+    font-size: 7vw;
+    font-weight: 700;
+    font-family: 'TheJamsil5Bold';
+}
+.noticeTxtAndImg h3{
+    padding-left: 70px;
+    font-size: 7vw;
+    font-weight: 700;
+    box-sizing: border-box;
+    font-family:'TheJamsil5Bold';
+}
+.noticeImg>img{
+    width: 100%;
+}
+.noticeBoxs{
+    width: 30vw;
+   
+}
+.noticeBoxs>div{
+    height: 10vh;
+    background-color: #1B5E4A;
+    color: #FAF7F2;
+    box-sizing: border-box;
+    margin-top: 50px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.noticeBoxs>div>p{
+   font-weight: 700;
+   line-height: 1.8;
+   text-align: center;
+}
+@media screen and (max-width:720px) {
+    .mainNotice{
+        flex-direction: column;
+    }
+    .noticeTxtAndImg{
+        width: 0;
+    }
+    .noticeTxt{
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column  ;
+        line-height: 1.2;
+    }
+    .noticeImg{
+        display: none;
+    }
+    .noticeTxtAndImg h2{
+        font-size: 10vw;
+        font-weight: 700;
+        font-family: 'TheJamsil5Bold';
+        text-align: center;
+    }
+    .noticeTxtAndImg h3{
+        padding-left: 0;
+        font-size: 10vw;
+        font-weight: 700;
+        box-sizing: border-box;
+        font-family:'TheJamsil5Bold';
+        text-align: center;
+        ;
+    }
+    .noticeBoxs{
+        width: 70vw;
+    }
+}

@@ -1,0 +1,361 @@
+main{
+    width: 100%;
+    padding-top: 100px;
+}
+
+.sec1_tit {
+    width: 100%;
+    max-height: 750px;
+    position: relative;
+}
+
+.sec1_tit>.sec1_tit_bg {
+    width: 100%;
+    position: relative;
+}
+
+.sec1_tit .sec1_tit_bg_img {
+    width: 100%;
+    height: 750px;
+    background-image: url(./../img/AboutUs_OzzyCoffee/coffee_foam_cup.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.sec1_tit .sec1_tit_bg_color {
+    width: 100%;
+    height: 750px;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    background-color: #1b5e4aaa;
+}
+
+.sec1_tit>.sec1_tit_txt {
+    width: 100%;
+    height: 750px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.sec1_tit>.sec1_tit_txt>h1 {
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 64px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 25px;
+}
+
+.sec1_tit>.sec1_tit_txt>p {
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+}
+
+
+.bold {
+    font-weight: 700;
+    color: #3E2C23;
+}
+
+
+.sec2_arti {
+    width: 100%;
+    padding: 70px 0;
+    box-sizing: border-box;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 145px;
+}
+
+.sec2_arti>.sec2_arti_tit {
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.sec2_arti>.sec2_arti_tit>h2 {
+    color: #000;
+}
+
+.sec2_arti>.sec2_arti_tit>h2:nth-child(1) {
+    color: #D80056;
+}
+
+.sec2_arti>.sec2_arti_txt {
+    font-family: "Noto Sans KR", sans-serif;
+    font-weight: 400;
+    text-align: end;
+
+    overflow: hidden;
+}
+
+.sec2_arti>.sec2_arti_txt>.sec2_arti_txt_tit {
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 32px;
+    margin-bottom: 10px;
+
+    transition: transform 0.5s ease;
+    /* 기본 위치 */
+    transform: translateX(100%);
+    position: relative;
+}
+
+.sec2_arti>.sec2_arti_txt>.sec2_arti_txt_tit.active {
+    transform: translateX(0);
+}
+
+.sec3_txt_wrap_arti {
+    width: 100%;
+    padding: 70px 0;
+
+    box-sizing: border-box;
+    background-color: #FAF7F2;
+}
+
+.sec3_txt_wrap_arti>article {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 30px;
+    padding: 0 0 145px;
+
+    font-family: "Noto Sans KR", sans-serif;
+}
+.sec3_txt_wrap_arti>article:last-child{
+    padding: 0;
+}
+
+.sec3_txt_wrap_arti .sec3_txt_wrap_img {
+    flex: 1 1 auto;
+    max-width: 765px;
+    aspect-ratio: 4 / 3;
+    overflow: hidden;
+}
+
+.sec3_txt_wrap_arti .sec3_txt_wrap_img>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.sec3_txt_wrap_arti .sec3_txt_wrap_txt {
+    flex: 1 1 auto;
+    max-width: 765px;
+}
+
+.sec3_txt_wrap_arti .sec3_txt_wrap_txt_right {
+    text-align: right;
+}
+
+.sec3_txt_wrap_arti>article h1 {
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 128px;
+    font-weight: 400;
+}
+
+.sec3_txt_wrap_arti>article h4 {
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 48px;
+    font-weight: 400;
+}
+
+.sec3_txt_wrap_arti>article p {
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.sec3_txt_wrap_slide {
+    display: none;
+}
+
+
+@media screen and (max-width: 1024px) {
+
+    .sec1_tit .sec1_tit_bg_img {
+        width: 100%;
+        height: 750px;
+        background-image: url(./../img/AboutUs_OzzyCoffee/coffee_foam_cup.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+
+    .sec2_arti {
+        width: 100%;
+        padding: 90px 0;
+        box-sizing: border-box;
+
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .br {
+        display: block;
+    }
+
+    .sec3_txt_wrap_arti {
+        display: none;
+    }
+
+    .sec3_txt_wrap_slide {
+        display: flex;
+    }
+
+    .sec3_txt_wrap_slide {
+        width: 100%;
+    }
+
+    .sec3_txt_wrap_slide>article .swiper-wrapper>.swiper-slide {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        gap: 20px;
+        padding: 90px 0;
+
+        font-family: "Noto Sans KR", sans-serif;
+    }
+
+    .sec3_txt_wrap_slide .sec3_txt_wrap_img {
+        flex: 1 1 auto;
+        max-width: 400px;
+        min-width: 0;
+        aspect-ratio: 4 / 3;
+        overflow: hidden;
+    }
+
+    .sec3_txt_wrap_slide .sec3_txt_wrap_img>img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .sec3_txt_wrap_slide .sec3_txt_wrap_txt {
+        flex: 1 1 auto;
+        max-width: 450px;
+    }
+
+    .sec3_txt_wrap_slide .sec3_txt_wrap_txt_right {
+        text-align: right;
+    }
+
+    .sec3_txt_wrap_slide>article h1 {
+        font-family: "Noto Sans KR", sans-serif;
+        font-size: 96px;
+        font-weight: 400;
+    }
+
+    .sec3_txt_wrap_slide>article h4 {
+        font-family: "Noto Sans KR", sans-serif;
+        font-size: 24px;
+        font-weight: 400;
+    }
+
+    .sec3_txt_wrap_slide>article p {
+        font-family: "Noto Sans KR", sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    .sec3_txt_wrap_slide .swiper-button-next {
+        color: #013220;
+    }
+
+    .sec3_txt_wrap_slide .swiper-button-prev {
+        color: #013220;
+    }
+
+    .sec3_txt_wrap_slide .swiper-pagination-bullet {
+        background-color: #7a5c4730;
+        /* 주황색 + 투명도 */
+        opacity: 1;
+        /* Swiper 기본 투명도 제거 */
+        transition: background-color 0.3s ease;
+    }
+
+    .sec3_txt_wrap_slide .swiper-pagination-bullet-active {
+        background-color: #D80056;
+        /* 진한 주황색 */
+    }
+
+    .swiper {
+        width: 100%;
+        height: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .sec3_txt_wrap_slide .sec3_wrap_img_phone_display{
+        display: block;
+    }
+
+    .sec3_txt_wrap_slide .sec3_wrap_img_phone{
+        display: none;
+    }
+    
+}
+
+@media screen and (max-width: 720px) {
+
+    .sec2_arti {
+        width: 100%;
+        padding: 90px 0;
+        box-sizing: border-box;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 90px;
+
+        text-align: center;
+    }
+
+    .sec2_arti>.sec2_arti_txt {
+        font-family: "Noto Sans KR", sans-serif;
+        font-weight: 400;
+
+        text-align: center;
+    }
+
+    .sec3_txt_wrap_slide>article .swiper-wrapper>.swiper-slide {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+        padding: 90px 0;
+
+        font-family: "Noto Sans KR", sans-serif;
+    }
+
+    .sec3_txt_wrap_slide .sec3_txt_wrap_txt_right {
+        text-align: start;
+    }
+
+    .sec3_txt_wrap_slide .sec3_wrap_img_phone_display{
+        display: none;
+    }
+
+    .sec3_txt_wrap_slide .sec3_wrap_img_phone{
+        display: block;
+    }
+
+}

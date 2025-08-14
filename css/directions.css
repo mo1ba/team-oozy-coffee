@@ -1,0 +1,194 @@
+.dir-page { 
+    background:#FAF7F2;
+    padding-top: 100px;
+}
+.dir-hero { 
+    text-align:center; 
+    padding:48px 20px 24px; 
+}
+.dir-hero h1{ 
+    margin:0; 
+    font-weight:700; 
+    font-size:28px; 
+    letter-spacing:.02em; 
+}
+
+.dir-wrap{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px 20px 72px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-around;
+  align-items: start;
+}
+
+
+
+.dir-info h2{ 
+    margin:0 0 18px; 
+    font-size:28px; 
+    font-weight:700; 
+}
+.dir-desc{ 
+    margin:0 0 16px; 
+    color:#333; 
+    line-height:1.7; 
+}
+.dir-addr{ 
+    margin:0 0 18px; 
+    font-style:normal; 
+    color:black; 
+    line-height:1.7;
+    font-weight: 600;
+}
+.dir-wrap .map-figure{
+  overflow: hidden;
+}
+.dir-wrap .map-figure>img{
+  width: 200%;    /* 부모 컨테이너의 폭을 따라 늘어남 */
+  height: auto;   /* 가로세로 비율 유지 */
+  display: block; /* 불필요한 여백 제거 */
+  object-fit: cover;
+  transform: translate(-15%, -2%);
+}
+
+/* TEL/FAX 행 */
+.dir-contact{ 
+    margin:0 0 16px; 
+}
+.dir-contact > div{
+  display:flex; 
+  gap:16px; 
+  align-items:center; 
+  margin:8px 0;
+}
+.dir-contact dt{ 
+    width:60px; 
+    color:#222; 
+    font-weight:700; 
+}
+.dir-contact dd{ 
+    margin:0; 
+    color:#222; 
+}
+
+/* 가맹문의 버튼 */
+.dir-cta{
+  display:inline-block;
+  padding:10px 16px;
+  border:3px solid #013220;
+  border-radius:50px;
+  font-weight:700;
+  text-decoration:none;
+  color:#013220;
+}
+
+
+@media (min-width:1025px){
+  .dir-wrap{
+    grid-template-columns: minmax(580px, 1fr) minmax(420px, 1fr);
+  }
+  .dir-addr{
+    white-space: nowrap;
+  }
+}
+
+@media (max-width:1024px) and (min-width:721px){
+  .dir-hero{ 
+    padding: 36px 20px 16px; 
+    text-align: center; 
+  }
+  .dir-wrap{
+    grid-template-columns: 1fr;
+    gap: 28px;
+    max-width: 820px;
+    margin: 0 auto;
+    padding: 24px 20px 64px;
+  }
+
+  .dir-addr{ 
+    white-space: normal; 
+  }
+
+  .dir-contact{
+    display: grid;
+    grid-template-columns: auto 1fr;  
+    row-gap: 10px;
+    column-gap: 16px;
+    align-items: center;
+  }
+  .dir-contact > div{ 
+    display: contents;   
+  }
+  .dir-contact dt{ 
+    font-weight:700; 
+  }
+  .dir-contact dd{ 
+    margin:0; 
+  }
+
+  .dir-map img{
+    width: 100%;
+    max-width: 820px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+
+@media (max-width:720px){
+.dir-hero{ 
+  padding: 28px 16px 12px; 
+  text-align: center; 
+}
+  .dir-wrap{ 
+    padding: 16px; 
+    gap: 20px; 
+    grid-template-columns: 1fr; 
+}
+
+  .dir-info h2{ 
+    font-size: 24px; 
+    margin: 0 0 12px; 
+}
+  .dir-desc{ 
+    margin: 0 0 10px; 
+    line-height: 1.6; 
+}
+  .dir-addr{ 
+    white-space: normal; 
+    margin: 0 0 14px; 
+}
+  .dir-addr a{ 
+    text-decoration: underline; 
+    text-underline-offset: 2px; 
+}
+  .dir-contact{
+    display: flex;                
+    justify-content: flex-start;          
+    align-items: center;
+    gap: 20px;
+  }
+  .dir-contact > div{                        
+    display: flex; 
+    align-items: center; 
+    gap: 5px;
+}
+  .dir-contact dt{ 
+    margin:0; 
+    font-weight:700; 
+}
+  .dir-contact dd{ 
+    margin:0; 
+    white-space:nowrap; 
+}
+  .dir-map img{
+    width: 100%;
+    max-width: 700px; 
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+}
