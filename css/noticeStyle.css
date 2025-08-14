@@ -28,13 +28,14 @@ main{
    font-family: "Noto Sans KR", sans-serif;
 }
 .noticeIconImgs{
+    display: flex;
     align-items: center;
 }
 
 .noticeArrowImg{
     width: 20px; height: 20px;
-    padding-bottom: 20px;
-    
+    padding-bottom: 15px;
+    transform: rotate(90deg);
 }
 .noticeContent>p{
     font-size: 18px;

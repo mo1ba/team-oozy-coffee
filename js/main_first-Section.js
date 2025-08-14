@@ -11,6 +11,10 @@
   const menuSwiper = new Swiper(".home .menuSwiper", {
     slidesPerView: 4,
     spaceBetween: 30,
+
+    /* 무한 루프 */
+    loop: true,
+
     navigation: {
       nextEl: ".home .swiper-button-next",
       prevEl: ".home .swiper-button-prev",
@@ -21,7 +25,6 @@
       1024: { slidesPerView: 4,   spaceBetween: 30 },
     }
   });
-
   // 데이터
   const slideData = {
     new: [
